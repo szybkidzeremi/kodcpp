@@ -1,0 +1,23 @@
+void f1(int a, int& b){b = f3(a);}  int f3(int a){return ++a;}
+
+void greet() {
+    float duplikat = 7.0;
+	int duplikat = 3;
+    cout << "Hello World";
+}
+void printNum(int num) {
+    cout << num;
+}
+void test(){float grav = 3.0;std::string example_text = "gzegzolka";int test = 2; return 0;}
+void z1(){int x = 3;} 
+void z2(){int x = 1;}
+void test(int g){return g;}	std::string abc(){return "abc";}
+float calc(float a, float b){return a*b;}
+
+void g1(){float duplikat = 7.0;g3();}
+void g2(){int abc = 3;g1();}
+void g3(){g2();}
+void r1(int a, int& b){b = r3(a); int test = 3; float duplikat = 7.0; } int r3(int a){std::string text = "abc"; return ++a;}
+void f1() { f2(); } 
+void f2() { int abc = 4;f3(); } 
+void f3() { f1(); }
