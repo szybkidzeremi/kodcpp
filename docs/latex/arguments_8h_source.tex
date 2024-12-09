@@ -1,0 +1,44 @@
+\doxysection{arguments.\+h}
+\hypertarget{arguments_8h_source}{}\label{arguments_8h_source}\mbox{\hyperlink{arguments_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ARGUMENTS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ARGUMENTS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classarguments}{arguments}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classarguments_a86712a2d1ffe3ffaadc73ffe4a04fb2a}{arguments}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[]);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ \mbox{\hyperlink{classarguments_a72549bb5c984a876d8cb95d6bdb73195}{get\_input}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ \mbox{\hyperlink{classarguments_a04b5ec65ab43eb602b793b47fcaf5d25}{get\_output}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classarguments_a4f9da02dd93fc74e9c2c0f675817b5e5}{find\_local\_variables}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classarguments_a857511b4ac8f6e1d8579731b640c25d6}{find\_called\_functions}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classarguments_ab582fa2e7a3fe28f7d77fe9aa6b02524}{find\_duplicate\_variables}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ std::string\ \mbox{\hyperlink{classarguments_ad85fd654e5f0b38ebe7ca6274c38598a}{find\_function\_calls}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ std::string\ \mbox{\hyperlink{classarguments_a278bd9d690b8f93dfbe4012d6b8775ca}{find\_variables\_by\_type}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{/*\ Plik\ wejściowy\ i\ wyjściowy\ */}}
+\DoxyCodeLine{00067\ \ \ \ \ std::string\ input\_file;}
+\DoxyCodeLine{00068\ \ \ \ \ std::string\ output\_file;}
+\DoxyCodeLine{00069\ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{comment}{/*\ Argumenty\ */}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{bool}\ local\_variables;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{bool}\ called\_functions;}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{bool}\ duplicate\_variables;}
+\DoxyCodeLine{00074\ \ \ \ \ std::string\ function\_calls;}
+\DoxyCodeLine{00075\ \ \ \ \ std::string\ variables\_by\_type;}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ parse(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[]);}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

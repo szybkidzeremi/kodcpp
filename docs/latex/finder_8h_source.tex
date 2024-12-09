@@ -1,0 +1,34 @@
+\doxysection{finder.\+h}
+\hypertarget{finder_8h_source}{}\label{finder_8h_source}\mbox{\hyperlink{finder_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FINDER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FINDER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <regex>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classfinder}{finder}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classfinder_a7fce293b17c3abc354a194da87f73a76}{finder}}(\textcolor{keyword}{const}\ std::string\&\ code);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ \mbox{\hyperlink{classfinder_a83c44f2ccc0c67966e9f67a20df89cdb}{find\_functions}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ \mbox{\hyperlink{classfinder_a8cb35e50688a2bb621a4e6d0b3e35588}{find\_local\_variables}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ std::string\ \mbox{\hyperlink{classfinder_a560c258ea24c844848812f408677a2da}{find\_called\_functions}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ std::string\ \mbox{\hyperlink{classfinder_ae62901ba8a6b9aa94da3066160164b5e}{find\_function\_calls\_in\_functions}}(\textcolor{keyword}{const}\ std::string\&\ functionName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ std::string\ \mbox{\hyperlink{classfinder_a86906713c693d89b84431d73a59fda9e}{find\_duplicate\_variables}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::string\ \mbox{\hyperlink{classfinder_a9236cc5f8fdda89f57113b14da290b4a}{find\_variables\_by\_type}}(\textcolor{keyword}{const}\ std::string\&\ type)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ std::string\ code;}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

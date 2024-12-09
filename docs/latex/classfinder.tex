@@ -1,0 +1,154 @@
+\doxysection{Dokumentacja klasy finder}
+\hypertarget{classfinder}{}\label{classfinder}\index{finder@{finder}}
+
+
+Klasa finder służąca do szukania funkcji, zmiennych, itd. w plikach źródłowych C++.  
+
+
+
+
+{\ttfamily \#include $<$finder.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfinder_a7fce293b17c3abc354a194da87f73a76}{finder}} (const std\+::string \&code)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy finder. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfinder_a83c44f2ccc0c67966e9f67a20df89cdb}{find\+\_\+functions}} () const
+\begin{DoxyCompactList}\small\item\em Znajduje funkcje w kodzie źródłowym. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfinder_a8cb35e50688a2bb621a4e6d0b3e35588}{find\+\_\+local\+\_\+variables}} () const
+\begin{DoxyCompactList}\small\item\em Znajduje zmienne lokalne w funkcjach w kodzie źródłowym. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfinder_a560c258ea24c844848812f408677a2da}{find\+\_\+called\+\_\+functions}} () const
+\begin{DoxyCompactList}\small\item\em Znajduje wywołane funkcje w kodzie źródłowym. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfinder_ae62901ba8a6b9aa94da3066160164b5e}{find\+\_\+function\+\_\+calls\+\_\+in\+\_\+functions}} (const std\+::string \&function\+Name) const
+\begin{DoxyCompactList}\small\item\em Znajduje wywołania danej funkcji w innych funkcjach w kodzie źródłowym. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfinder_a86906713c693d89b84431d73a59fda9e}{find\+\_\+duplicate\+\_\+variables}} () const
+\begin{DoxyCompactList}\small\item\em Znajduje zmienne o tej samej nazwie w różnych funkcjach w kodzie źródłowym. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classfinder_a9236cc5f8fdda89f57113b14da290b4a}{find\+\_\+variables\+\_\+by\+\_\+type}} (const std\+::string \&type) const
+\begin{DoxyCompactList}\small\item\em Znajduje zmienne danego typu w kodzie źródłowym. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa finder służąca do szukania funkcji, zmiennych, itd. w plikach źródłowych C++. 
+
+\begin{DoxyAuthor}{Autor}
+Bartosz Biesiada 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classfinder_a7fce293b17c3abc354a194da87f73a76}\index{finder@{finder}!finder@{finder}}
+\index{finder@{finder}!finder@{finder}}
+\doxysubsubsection{\texorpdfstring{finder()}{finder()}}
+{\footnotesize\ttfamily \label{classfinder_a7fce293b17c3abc354a194da87f73a76} 
+finder\+::finder (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{code}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy finder. 
+
+\begin{DoxyAuthor}{Autor}
+Bartosz Biesiada 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parametry}
+{\em code} & Kod źródłowy jako string. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classfinder_a560c258ea24c844848812f408677a2da}\index{finder@{finder}!find\_called\_functions@{find\_called\_functions}}
+\index{find\_called\_functions@{find\_called\_functions}!finder@{finder}}
+\doxysubsubsection{\texorpdfstring{find\_called\_functions()}{find\_called\_functions()}}
+{\footnotesize\ttfamily \label{classfinder_a560c258ea24c844848812f408677a2da} 
+std\+::string finder\+::find\+\_\+called\+\_\+functions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Znajduje wywołane funkcje w kodzie źródłowym. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Lista wywołanych funkcji. 
+\end{DoxyReturn}
+\Hypertarget{classfinder_a86906713c693d89b84431d73a59fda9e}\index{finder@{finder}!find\_duplicate\_variables@{find\_duplicate\_variables}}
+\index{find\_duplicate\_variables@{find\_duplicate\_variables}!finder@{finder}}
+\doxysubsubsection{\texorpdfstring{find\_duplicate\_variables()}{find\_duplicate\_variables()}}
+{\footnotesize\ttfamily \label{classfinder_a86906713c693d89b84431d73a59fda9e} 
+std\+::string finder\+::find\+\_\+duplicate\+\_\+variables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Znajduje zmienne o tej samej nazwie w różnych funkcjach w kodzie źródłowym. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Lista zmiennych o tych samych nazwach znalezionych w kilku funkcjach. 
+\end{DoxyReturn}
+\Hypertarget{classfinder_ae62901ba8a6b9aa94da3066160164b5e}\index{finder@{finder}!find\_function\_calls\_in\_functions@{find\_function\_calls\_in\_functions}}
+\index{find\_function\_calls\_in\_functions@{find\_function\_calls\_in\_functions}!finder@{finder}}
+\doxysubsubsection{\texorpdfstring{find\_function\_calls\_in\_functions()}{find\_function\_calls\_in\_functions()}}
+{\footnotesize\ttfamily \label{classfinder_ae62901ba8a6b9aa94da3066160164b5e} 
+std\+::string finder\+::find\+\_\+function\+\_\+calls\+\_\+in\+\_\+functions (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{function\+Name}{}\end{DoxyParamCaption}) const}
+
+
+
+Znajduje wywołania danej funkcji w innych funkcjach w kodzie źródłowym. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em function\+\_\+name} & Nazwa funkcji do wyszukania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+std\+::string Lista funkcji, w których dana funkcja jest wywoływana. 
+\end{DoxyReturn}
+\Hypertarget{classfinder_a83c44f2ccc0c67966e9f67a20df89cdb}\index{finder@{finder}!find\_functions@{find\_functions}}
+\index{find\_functions@{find\_functions}!finder@{finder}}
+\doxysubsubsection{\texorpdfstring{find\_functions()}{find\_functions()}}
+{\footnotesize\ttfamily \label{classfinder_a83c44f2ccc0c67966e9f67a20df89cdb} 
+std\+::string finder\+::find\+\_\+functions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Znajduje funkcje w kodzie źródłowym. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Lista znalezionych funkcji. 
+\end{DoxyReturn}
+\Hypertarget{classfinder_a8cb35e50688a2bb621a4e6d0b3e35588}\index{finder@{finder}!find\_local\_variables@{find\_local\_variables}}
+\index{find\_local\_variables@{find\_local\_variables}!finder@{finder}}
+\doxysubsubsection{\texorpdfstring{find\_local\_variables()}{find\_local\_variables()}}
+{\footnotesize\ttfamily \label{classfinder_a8cb35e50688a2bb621a4e6d0b3e35588} 
+std\+::string finder\+::find\+\_\+local\+\_\+variables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Znajduje zmienne lokalne w funkcjach w kodzie źródłowym. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Lista zmiennych lokalnych w funkcjach. 
+\end{DoxyReturn}
+\Hypertarget{classfinder_a9236cc5f8fdda89f57113b14da290b4a}\index{finder@{finder}!find\_variables\_by\_type@{find\_variables\_by\_type}}
+\index{find\_variables\_by\_type@{find\_variables\_by\_type}!finder@{finder}}
+\doxysubsubsection{\texorpdfstring{find\_variables\_by\_type()}{find\_variables\_by\_type()}}
+{\footnotesize\ttfamily \label{classfinder_a9236cc5f8fdda89f57113b14da290b4a} 
+std\+::string finder\+::find\+\_\+variables\+\_\+by\+\_\+type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type}{}\end{DoxyParamCaption}) const}
+
+
+
+Znajduje zmienne danego typu w kodzie źródłowym. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em type} & Typ zmiennej do wyszukania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+std\+::string Lista zmiennych danego typu. 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{finder_8h}{finder.\+h}}\item 
+\mbox{\hyperlink{finder_8cpp}{finder.\+cpp}}\end{DoxyCompactItemize}

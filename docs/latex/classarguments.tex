@@ -1,0 +1,164 @@
+\doxysection{Dokumentacja klasy arguments}
+\hypertarget{classarguments}{}\label{classarguments}\index{arguments@{arguments}}
+
+
+Klasa arguments służąca do odczytu argumentów przekazanych do programu.  
+
+
+
+
+{\ttfamily \#include $<$arguments.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarguments_a86712a2d1ffe3ffaadc73ffe4a04fb2a}{arguments}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy arguments. Parsuje argumenty przekazane do programu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classarguments_a72549bb5c984a876d8cb95d6bdb73195}{get\+\_\+input}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę pliku wejściowego. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classarguments_a04b5ec65ab43eb602b793b47fcaf5d25}{get\+\_\+output}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę pliku wyjściowego. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classarguments_a4f9da02dd93fc74e9c2c0f675817b5e5}{find\+\_\+local\+\_\+variables}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy powinny być wyszukiwane zmienne lokalne. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classarguments_a857511b4ac8f6e1d8579731b640c25d6}{find\+\_\+called\+\_\+functions}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy powinny być wyszukiwane wywołane funkcje. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classarguments_ab582fa2e7a3fe28f7d77fe9aa6b02524}{find\+\_\+duplicate\+\_\+variables}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy powinny być wyszukiwane zmienne o tej samej nazwie w różnych funkcjach. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classarguments_ad85fd654e5f0b38ebe7ca6274c38598a}{find\+\_\+function\+\_\+calls}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę funkcji do wyszukania jej wywołań. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classarguments_a278bd9d690b8f93dfbe4012d6b8775ca}{find\+\_\+variables\+\_\+by\+\_\+type}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca typ zmiennej do wyszukania jej wystąpień. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa arguments służąca do odczytu argumentów przekazanych do programu. 
+
+\begin{DoxyAuthor}{Autor}
+Bartosz Biesiada 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classarguments_a86712a2d1ffe3ffaadc73ffe4a04fb2a}\index{arguments@{arguments}!arguments@{arguments}}
+\index{arguments@{arguments}!arguments@{arguments}}
+\doxysubsubsection{\texorpdfstring{arguments()}{arguments()}}
+{\footnotesize\ttfamily \label{classarguments_a86712a2d1ffe3ffaadc73ffe4a04fb2a} 
+arguments\+::arguments (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy arguments. Parsuje argumenty przekazane do programu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em argc} & Liczba argumentów przekazanych do programu. \\
+\hline
+{\em argv} & Tablica argumentów przekazanych do programu. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classarguments_a857511b4ac8f6e1d8579731b640c25d6}\index{arguments@{arguments}!find\_called\_functions@{find\_called\_functions}}
+\index{find\_called\_functions@{find\_called\_functions}!arguments@{arguments}}
+\doxysubsubsection{\texorpdfstring{find\_called\_functions()}{find\_called\_functions()}}
+{\footnotesize\ttfamily \label{classarguments_a857511b4ac8f6e1d8579731b640c25d6} 
+bool arguments\+::find\+\_\+called\+\_\+functions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy powinny być wyszukiwane wywołane funkcje. 
+
+\begin{DoxyReturn}{Zwraca}
+true Jeśli powinny być wyszukiwane wywołane funkcje. 
+
+false Jeśli nie powinny być wyszukiwane wywołane funkcje. 
+\end{DoxyReturn}
+\Hypertarget{classarguments_ab582fa2e7a3fe28f7d77fe9aa6b02524}\index{arguments@{arguments}!find\_duplicate\_variables@{find\_duplicate\_variables}}
+\index{find\_duplicate\_variables@{find\_duplicate\_variables}!arguments@{arguments}}
+\doxysubsubsection{\texorpdfstring{find\_duplicate\_variables()}{find\_duplicate\_variables()}}
+{\footnotesize\ttfamily \label{classarguments_ab582fa2e7a3fe28f7d77fe9aa6b02524} 
+bool arguments\+::find\+\_\+duplicate\+\_\+variables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy powinny być wyszukiwane zmienne o tej samej nazwie w różnych funkcjach. 
+
+\begin{DoxyReturn}{Zwraca}
+true Jeśli powinny być wyszukiwane zmienne o tej samej nazwie w różnych funkcjach. 
+
+false Jeśli nie powinny być wyszukiwane zmienne o tej samej nazwie w różnych funkcjach. 
+\end{DoxyReturn}
+\Hypertarget{classarguments_ad85fd654e5f0b38ebe7ca6274c38598a}\index{arguments@{arguments}!find\_function\_calls@{find\_function\_calls}}
+\index{find\_function\_calls@{find\_function\_calls}!arguments@{arguments}}
+\doxysubsubsection{\texorpdfstring{find\_function\_calls()}{find\_function\_calls()}}
+{\footnotesize\ttfamily \label{classarguments_ad85fd654e5f0b38ebe7ca6274c38598a} 
+std\+::string arguments\+::find\+\_\+function\+\_\+calls (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca nazwę funkcji do wyszukania jej wywołań. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Nazwa funkcji. 
+\end{DoxyReturn}
+\Hypertarget{classarguments_a4f9da02dd93fc74e9c2c0f675817b5e5}\index{arguments@{arguments}!find\_local\_variables@{find\_local\_variables}}
+\index{find\_local\_variables@{find\_local\_variables}!arguments@{arguments}}
+\doxysubsubsection{\texorpdfstring{find\_local\_variables()}{find\_local\_variables()}}
+{\footnotesize\ttfamily \label{classarguments_a4f9da02dd93fc74e9c2c0f675817b5e5} 
+bool arguments\+::find\+\_\+local\+\_\+variables (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy powinny być wyszukiwane zmienne lokalne. 
+
+\begin{DoxyReturn}{Zwraca}
+true Jeśli powinny być wyszukiwane zmienne lokalne. 
+
+false Jeśli nie powinny być wyszukiwane zmienne lokalne. 
+\end{DoxyReturn}
+\Hypertarget{classarguments_a278bd9d690b8f93dfbe4012d6b8775ca}\index{arguments@{arguments}!find\_variables\_by\_type@{find\_variables\_by\_type}}
+\index{find\_variables\_by\_type@{find\_variables\_by\_type}!arguments@{arguments}}
+\doxysubsubsection{\texorpdfstring{find\_variables\_by\_type()}{find\_variables\_by\_type()}}
+{\footnotesize\ttfamily \label{classarguments_a278bd9d690b8f93dfbe4012d6b8775ca} 
+std\+::string arguments\+::find\+\_\+variables\+\_\+by\+\_\+type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca typ zmiennej do wyszukania jej wystąpień. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Typ zmiennej. 
+\end{DoxyReturn}
+\Hypertarget{classarguments_a72549bb5c984a876d8cb95d6bdb73195}\index{arguments@{arguments}!get\_input@{get\_input}}
+\index{get\_input@{get\_input}!arguments@{arguments}}
+\doxysubsubsection{\texorpdfstring{get\_input()}{get\_input()}}
+{\footnotesize\ttfamily \label{classarguments_a72549bb5c984a876d8cb95d6bdb73195} 
+std\+::string arguments\+::get\+\_\+input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca nazwę pliku wejściowego. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Nazwa pliku wejściowego. 
+\end{DoxyReturn}
+\Hypertarget{classarguments_a04b5ec65ab43eb602b793b47fcaf5d25}\index{arguments@{arguments}!get\_output@{get\_output}}
+\index{get\_output@{get\_output}!arguments@{arguments}}
+\doxysubsubsection{\texorpdfstring{get\_output()}{get\_output()}}
+{\footnotesize\ttfamily \label{classarguments_a04b5ec65ab43eb602b793b47fcaf5d25} 
+std\+::string arguments\+::get\+\_\+output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca nazwę pliku wyjściowego. 
+
+\begin{DoxyReturn}{Zwraca}
+std\+::string Nazwa pliku wyjściowego. 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{arguments_8h}{arguments.\+h}}\item 
+\mbox{\hyperlink{arguments_8cpp}{arguments.\+cpp}}\end{DoxyCompactItemize}

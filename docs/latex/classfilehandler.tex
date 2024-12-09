@@ -1,0 +1,99 @@
+\doxysection{Dokumentacja klasy filehandler}
+\hypertarget{classfilehandler}{}\label{classfilehandler}\index{filehandler@{filehandler}}
+
+
+Klasa do obsługi odczytu i zapisu do plików.  
+
+
+
+
+{\ttfamily \#include $<$filehandler.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfilehandler_aaaddea5aa11971f1adb21e63554ced70}{filehandler}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Konstruktor otwierający określony plik do odczytu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfilehandler_a57214cde449ab4361fd3af962e8d1326}{read}} (std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Odczytuje zawartość pliku i zapisuje ją w podanym ciągu znaków. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfilehandler_adb1eb9c598cea110b4814d7c577d9106}{close}} ()
+\begin{DoxyCompactList}\small\item\em Zamyka plik, jeśli jest otwarty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfilehandler_af0ed44916b92eb06277757b2619c6de6}{write}} (const std\+::string \&filename, const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Zapisuje określoną zawartość do pliku. Tworzy plik, jeśli nie istnieje i nadpisuje go, jeśli istnieje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa do obsługi odczytu i zapisu do plików. 
+
+\begin{DoxyAuthor}{Autor}
+Bartosz Biesiada 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{classfilehandler_aaaddea5aa11971f1adb21e63554ced70}\index{filehandler@{filehandler}!filehandler@{filehandler}}
+\index{filehandler@{filehandler}!filehandler@{filehandler}}
+\doxysubsubsection{\texorpdfstring{filehandler()}{filehandler()}}
+{\footnotesize\ttfamily \label{classfilehandler_aaaddea5aa11971f1adb21e63554ced70} 
+filehandler\+::filehandler (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor otwierający określony plik do odczytu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em filename} & Nazwa pliku do otwarcia. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{classfilehandler_adb1eb9c598cea110b4814d7c577d9106}\index{filehandler@{filehandler}!close@{close}}
+\index{close@{close}!filehandler@{filehandler}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classfilehandler_adb1eb9c598cea110b4814d7c577d9106} 
+void filehandler\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zamyka plik, jeśli jest otwarty. 
+
+\Hypertarget{classfilehandler_a57214cde449ab4361fd3af962e8d1326}\index{filehandler@{filehandler}!read@{read}}
+\index{read@{read}!filehandler@{filehandler}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classfilehandler_a57214cde449ab4361fd3af962e8d1326} 
+void filehandler\+::read (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text}{}\end{DoxyParamCaption})}
+
+
+
+Odczytuje zawartość pliku i zapisuje ją w podanym ciągu znaków. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em text} & Ciąg znaków do zapisania zawartości pliku \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classfilehandler_af0ed44916b92eb06277757b2619c6de6}\index{filehandler@{filehandler}!write@{write}}
+\index{write@{write}!filehandler@{filehandler}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{classfilehandler_af0ed44916b92eb06277757b2619c6de6} 
+void filehandler\+::write (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{, }\item[{const std\+::string \&}]{text}{}\end{DoxyParamCaption})}
+
+
+
+Zapisuje określoną zawartość do pliku. Tworzy plik, jeśli nie istnieje i nadpisuje go, jeśli istnieje. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em filename} & Nazwa pliku do zapisu. \\
+\hline
+{\em text} & Zawartość do zapisania w pliku. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{filehandler_8h}{filehandler.\+h}}\item 
+\mbox{\hyperlink{filehandler_8cpp}{filehandler.\+cpp}}\end{DoxyCompactItemize}
